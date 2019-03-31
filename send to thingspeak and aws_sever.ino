@@ -2,7 +2,7 @@
 #include <DallasTemperature.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
-#include "my_info"
+#include "my_info.h"
 
 
 #define ONE_WIRE_BUS D4   
