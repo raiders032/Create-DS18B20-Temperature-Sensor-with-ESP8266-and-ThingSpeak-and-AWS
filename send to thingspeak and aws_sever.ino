@@ -2,6 +2,8 @@
 #include <DallasTemperature.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
+#include "my_info"
+
 
 #define ONE_WIRE_BUS D4   
 
@@ -9,8 +11,8 @@
 int interval = 60000;   // One Minute
 
 // Information to connect private Wifi
-const char* ssid     = "no";
-const char* password = "c987654321";
+const char* ssid     = my_info_ssid;
+const char* password = my_info_password;
 
 // Information to connect ThingSpeak
 const char* host     = "api.thingspeak.com";
